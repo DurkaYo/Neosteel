@@ -67,11 +67,6 @@ gulp.task('style:build', function () {
 //images build task
 gulp.task('image:build', function () {
   gulp.src(path.src.img)
-    .pipe(imagemin({
-      progressive: true,
-        svgoPlugins: [{removeViewBox: false}],
-        interlaced: true
-      }))
     .pipe(gulp.dest(path.build.img))
     .pipe(reload({stream: true}));
 });
