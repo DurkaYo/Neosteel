@@ -21,13 +21,13 @@ var path = {
       fonts: 'build/fonts'
     },
     src: {
-      html: 'src/*.jade',
-      style: 'src/style/style.sass',
+      html: 'src/*.pug',
+      style: 'src/style/stl_style.sass',
       img: 'src/image/**/*.*',
       fonts: 'src/fonts/**/*.*'
     },
     watch: {
-      html: 'src/**/*.jade',
+      html: 'src/**/*.pug',
       style: 'src/style/**/*.sass',
       img: 'src/image/**/*.*',
       fonts: 'src/fonts/**/*.*'
