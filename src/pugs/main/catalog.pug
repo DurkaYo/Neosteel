@@ -86,7 +86,8 @@
   each item in catalog
     .stl_catalog__element
       a(href=item.link).stl_catalog__link
-        img(src='image/'+item.img.name, title=item.img.title ).stl_catalog__link-img.stl_responsive-img
+        .stl_catalog__link-img_fix
+          img(src='image/'+item.img.name, title=item.img.title ).stl_catalog__link-img.stl_responsive-img
         span.stl_catalog__link-title=item.title
         span.stl_catalog__link-description=item.description
 .stl_catalog__warning
