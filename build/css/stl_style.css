@@ -426,6 +426,33 @@ html, body {
   font-size: 48px;
   padding-bottom: 40px;
   border-bottom: 4px solid #1c98b6; }
+  .stl_title--upper-title {
+    border-bottom: none;
+    text-transform: uppercase;
+    padding-bottom: 0; }
+
+.stl_text-left {
+  text-align: left; }
+
+.stl_text-right {
+  text-align: right; }
+
+.stl_text-center {
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .stl_title {
+    font-size: 36px;
+    margin: 30px 0 50px;
+    padding-bottom: 20px; } }
+
+@media screen and (max-width: 480px) {
+  .stl_title {
+    font-size: 28px;
+    margin: 30px 0 50px;
+    padding-bottom: 20px; }
+    .stl_title--upper-title {
+      padding-bottom: 0; } }
 
 .stl_wrapper {
   display: flex;
@@ -631,9 +658,54 @@ html, body {
   background: transparent url("/image/slider_element_bg_01.jpg") no-repeat center fixed;
   background-size: cover; }
 
-@media screen and (max-width: 939px) {
-  .stl_top-banner {
-    display: none; } }
+.stl_advantages {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center; }
+  .stl_advantages__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .stl_advantages__element {
+    text-align: left;
+    list-style: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    padding: 0 0 0 55px; }
+    .stl_advantages__element:last-child {
+      margin-bottom: 0; }
+    .stl_advantages__element:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 25px;
+      height: 25px;
+      background-color: #1c98b6;
+      border-radius: 50%; }
+
+@media screen and (max-width: 768px) {
+  .stl_advantages {
+    width: 80%; }
+    .stl_advantages__element {
+      font-size: 16px;
+      padding-left: 35px;
+      margin-bottom: 20px; }
+      .stl_advantages__element:before {
+        top: 5px;
+        width: 15px;
+        height: 15px; } }
+
+@media screen and (max-width: 480px) {
+  .stl_advantages {
+    width: 100%; }
+    .stl_advantages__element {
+      font-size: 14px; } }
 
 .stl_catalog {
   display: flex;
@@ -808,3 +880,7 @@ html, body {
 @media screen and (max-width: 480px) {
   .stl_product-nav__element {
     width: 50%; } }
+
+@media screen and (max-width: 939px) {
+  .stl_hidden-on-devices {
+    display: none; } }

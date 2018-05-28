@@ -10,3 +10,27 @@
   font-size: 48px
   padding-bottom: 40px
   border-bottom: 4px solid $color_light_blue
+  &--upper-title
+    border-bottom: none
+    text-transform: uppercase
+    padding-bottom: 0
+
+.stl_text-left
+  text-align: left
+.stl_text-right
+  text-align: right
+.stl_text-center
+  text-align: center
+
+@media screen and (max-width: 768px)
+  .stl_title
+    font-size: 36px
+    margin: 30px 0 50px
+    padding-bottom: 20px
+@media screen and (max-width: 480px)
+  .stl_title
+    font-size: 28px
+    margin: 30px 0 50px
+    padding-bottom: 20px
+    &--upper-title
+      padding-bottom: 0

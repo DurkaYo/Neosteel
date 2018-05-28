@@ -2,9 +2,16 @@ extends pugs/base
 block vars
   - var pageTitle = 'Главная страница';
 block main
-  .stl_top-banner
+  .stl_top-banner.stl_hidden-on-devices
   .stl_inner
     section.stl_section
       h2.stl_title Каталог
       include pugs/main/catalog_navigation
       include pugs/main/catalog
+    section.stl_section.stl_hidden-on-devices
+      h2.stl_title Выставка Металл Экспо 2016
+      .stl_exhibition.stl_text-center
+        img(src='image/youtube_fish.jpg' alt='image').stl_responsive-img
+    section.stl_section
+      h2.stl_title.stl_title--upper-title Наши преимущества
+      include pugs/main/advantages

@@ -7,6 +7,50 @@
   background: transparent url($path_image + 'slider_element_bg_01.jpg') no-repeat center fixed
   background-size: cover
 
-@media screen and (max-width: 939px)
-  .stl_top-banner
-    display: none
+.stl_advantages
+  width: 700px
+  margin: 0 auto
+  text-align: center
+  &__list
+    margin: 0
+    padding: 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+  &__element
+    text-align: left
+    list-style: none
+    position: relative
+    font-size: 20px
+    line-height: 130%
+    text-transform: uppercase
+    margin-bottom: 40px
+    padding:  0 0 0 55px
+    &:last-child
+      margin-bottom: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: $height_advantages_circle
+      height: $height_advantages_circle
+      background-color: $color_light_blue
+      border-radius: 50%
+
+@media screen and (max-width: 768px)
+  .stl_advantages
+    width: 80%
+    &__element
+      font-size: 16px
+      padding-left: 35px
+      margin-bottom: 20px
+      &:before
+        top: 5px
+        width: ($height_advantages_circle - 10px)
+        height: ($height_advantages_circle - 10px)
+@media screen and (max-width: 480px)
+  .stl_advantages
+    width: 100%
+    &__element
+      font-size: 14px
