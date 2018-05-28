@@ -1,0 +1,95 @@
+-
+  var catalog = [
+    {
+      id: 'product_01',
+      title: 'Нержавеющие трубы',
+      img: {
+          name: 'product1.png',
+          title: 'Профильные, круглые и фигурные нержавеющие трубы – купить со склада в Москве'
+      },
+      description: 'Профильные, круглые и фигурные нержавеющие трубы марок стали:  AISI 201, AISI 430, AISI 304 с зеркальной, матовой и шлифованной поверхностью.',
+      link: '/truba_anticor/'
+    },
+    {
+      id: 'product_02',
+      title: 'Нержавеющий круг',
+      img: {
+          name: 'product2.png',
+          title: 'Нержавеющий круг – купить со склада в Москве'
+      },
+      description: 'Марок стали AISI 201, AISI 304. Поставляемые диаметры от 3 мм до 500 мм.',
+      link: '/sort_pokat/krug_anticor/'
+    },
+    {
+      id: 'product_03',
+      title: 'Нержавеющий уголок',
+      img: {
+          name: 'product4.png',
+          title: 'Нержавеющий уголок – купить со склада в Москве'
+        },
+      description: 'Марки стали AISI 201, AISI 304.',
+      link: '/sort_pokat/all_krug_anticor/'
+    },
+    {
+      id: 'product_04',
+      title: 'Нержавеющий лист',
+      img: {
+          name: 'product5.png',
+          title: 'Нержавеющий лист – купить со склада в Москве'
+        },
+      description: 'Нержавеющие листы марок стали AISI 201, AISI 430,  AISI 304 с зеркальной, матовой и шлифованной поверхностью.',
+      link: '/list_nerj/'
+    },
+    {
+      id: 'product_05',
+      title: 'Комплектующие',
+      img: {
+          name: 'product6.png',
+          title: 'Комплектующие для лестничных ограждений и отводы из нержавеющей стали – купить со склада в Москве'
+      },
+      description: 'Для лестничных ограждений и отводы из нержавеющей стали марки AISI 304',
+      link: '/lestnica/'
+    },
+    {
+      id: 'product_06',
+      title: 'Полоса нержавеющая',
+      img: {
+          name: 'product7.png',
+          title: 'Полоса нержавеющая – купить со склада в Москве'
+      },
+      description: 'Марок стали AISI 201, AISI 304',
+      link: '/sort_pokat/polosa_n/'
+    },
+    {
+      id: 'product_07',
+      title: 'Полоса нержавеющая',
+      img: {
+          name: 'product7.png',
+          title: 'Полоса нержавеющая – купить со склада в Москве'
+      },
+      description: 'Марок стали AISI 201, AISI 304',
+      link: '/sort_pokat/polosa_n/'
+    },
+    {
+      id: 'product_09',
+      title: 'Проволока',
+      img: {
+          name: 'shestigrannik_254_180.gif',
+          title: 'Шестигранник калиброванный нержавеющий – купить со склада в Москве'
+      },
+      description: 'Марок стали AISI 304',
+      link: '/provoloka/'
+    }
+  ]
+
+.stl_catalog
+  each item in catalog
+    .stl_catalog__element
+      a(href=item.link).stl_catalog__link
+        img(src='image/'+item.img.name, title=item.img.title ).stl_catalog__link-img.stl_responsive-img
+        span.stl_catalog__link-title=item.title
+        span.stl_catalog__link-description=item.description
+.stl_catalog__warning
+  span.stl_catalog__warning-star *
+  |Уважаемые коллеги, в связи с колебаниями курса доллара цены, представленные на сайте являются приблизительными!
+  | Просьба за уточнением стоимости товара обращаться в отдел продаж по телефону +7 (495) 150-05-52.

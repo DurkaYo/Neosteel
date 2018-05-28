@@ -1,0 +1,42 @@
+@import variable
+@import mixins
+
+.stl_catalog
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  text-align: center
+  flex-wrap: wrap
+  &__element
+    width: 25%
+    position: relative
+  &__link
+    padding: 20px
+    text-decoration: none
+    transition: box-shadow .3s ease-in
+    box-shadow: 0 0 3px 0 rgba($color_input_border, 0)
+    display: block
+    &-img
+      margin-bottom: 10px
+    &-title
+      font-size: 12px
+      font-weight: 600
+      color: $color_black
+      display: block
+      margin-bottom: 10px
+      text-transform: uppercase
+    &-description
+      font-size: 10px
+      color: $color_input_border
+      display: block
+    &:hover
+      box-shadow: 0 2px 5px 0 rgba($color_input_border, 0.5)
+  &__warning
+    margin-top: 20px
+    color: $color_input_border
+    font-size: 12px
+    width: 70%
+    &-star
+      font-size: 14px
+      font-weight: 600
+      color: $color_light_blue

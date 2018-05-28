@@ -635,6 +635,46 @@ html, body {
   .stl_top-banner {
     display: none; } }
 
+.stl_catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  flex-wrap: wrap; }
+  .stl_catalog__element {
+    width: 25%;
+    position: relative; }
+  .stl_catalog__link {
+    padding: 20px;
+    text-decoration: none;
+    transition: box-shadow .3s ease-in;
+    box-shadow: 0 0 3px 0 rgba(136, 140, 158, 0);
+    display: block; }
+    .stl_catalog__link-img {
+      margin-bottom: 10px; }
+    .stl_catalog__link-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #000000;
+      display: block;
+      margin-bottom: 10px;
+      text-transform: uppercase; }
+    .stl_catalog__link-description {
+      font-size: 10px;
+      color: #888c9e;
+      display: block; }
+    .stl_catalog__link:hover {
+      box-shadow: 0 2px 5px 0 rgba(136, 140, 158, 0.5); }
+  .stl_catalog__warning {
+    margin-top: 20px;
+    color: #888c9e;
+    font-size: 12px;
+    width: 70%; }
+    .stl_catalog__warning-star {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1c98b6; }
+
 .stl_product-nav {
   display: flex;
   justify-content: space-between;
