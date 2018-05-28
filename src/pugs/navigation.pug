@@ -1,0 +1,60 @@
+-
+    var pages = [
+        {
+            id: "about",
+            href: "/about_company/",
+            title: "О компании"
+        },
+        {
+            id: "news",
+            href: "/corp-news/",
+            title: "Новости"
+        },
+        {
+            id: "corp_press",
+            href: "/corp-press/",
+            title: "Пресса о нас"
+        },
+        {
+            id: "spravochnik",
+            href: "/spravochnik/",
+            title: "Справочник"
+        },
+        {
+            id: "online",
+            href: "#",
+            title: "Online-заявка"
+        },
+        {
+            id: "calc",
+            href: "/calc/",
+            title: "Калькулятор"
+        },
+        {
+            id: "price_download",
+            href: "/price_download/",
+            title: "Прайс-лист"
+        },
+        {
+            id: "vacancy",
+            href: "/vacancy/",
+            title: "Вакансии"
+        },
+        {
+            id: "dostavka",
+            href: "/dostavka/",
+            title: "Доставка"
+        },
+        {
+            id: "contacts",
+            href: "/contacts/",
+            title: "Контакты"
+        }
+    ];
+
+nav.stl_navigation
+    .stl_inner.stl_navigation--no_padding
+        ul.stl_navigation__list
+            each item in pages
+                li.stl_navigation__list-element
+                    a(href=item.href).stl_navigation__list-link=item.title

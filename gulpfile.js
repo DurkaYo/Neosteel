@@ -28,6 +28,7 @@ var path = {
     },
     watch: {
       html: 'src/**/*.pug',
+      pugs: 'src/pugs/**/*.pug',
       style: 'src/style/**/*.sass',
       img: 'src/image/**/*.*',
       fonts: 'src/fonts/**/*.*'
@@ -88,6 +89,9 @@ gulp.task('build', [
 //wath
 gulp.task('watch', function(){
   watch([path.watch.html], function(event, cb) {
+    gulp.start('html:build');
+  });
+  watch([path.watch.pugs], function(event, cb) {
     gulp.start('html:build');
   });
   watch([path.watch.style], function(event, cb) {

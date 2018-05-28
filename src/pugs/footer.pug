@@ -1,0 +1,25 @@
+-
+    var footer_links = [
+    {
+    id: 'to_director',
+    link: '#',
+    title: 'Написать письмо директору'
+    },
+    {
+    id: 'dispatch',
+    link: '#',
+    title: 'Подписать на рассылку новостей'
+    },
+    {
+    id: 'call_me',
+    link: '#',
+    title: 'Заказать звонок'
+    }
+    ]
+
+footer.stl_footer
+    .stl_inner
+        .stl_footer-content
+            each item in footer_links
+                a(href=item.link, class='stl_footer--'+item.id).stl_footer-item=item.title
+        .stl_footer-copyright Copyright© ООО "НЕОСТИЛ ГРУПП", Ltd., 2007-2018

@@ -1,0 +1,40 @@
+@import variable
+@import mixins
+
+.stl_footer
+  color: $color_white
+  line-height: 120%
+  &-content
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+  &-item
+    width: 185px
+    font-size: 16px
+    line-height: 120%
+    color: $color_white
+    display: block
+    text-decoration: none
+    background: transparent no-repeat left center
+    padding-left: 85px
+    transition: opacity .3s
+    opacity: 1
+    margin-bottom: 40px
+    &:hover
+      opacity: .6
+  &--to_director
+    background-image: url($path_image + 'footer-man.png')
+    min-height: 70px
+  &--dispatch
+    background-image: url($path_image + 'footer-mail.png')
+    min-height: 50px
+  &--call_me
+    background-image: url($path_image + 'footer-phone.png')
+    min-height: 55px
+  &-copyright
+    font-size: 12px
+    text-align: center
+
+@media screen and (max-width: 640px)
+  ///

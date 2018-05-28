@@ -68,3 +68,16 @@
       padding: 0 15px 0 40px
       &:hover
         background-color: darken($color_light_blue, 10%)
+
+@media screen and (max-width: 910px)
+  .stl_header
+    &__content
+      flex-direction: column
+    &__logo
+      margin-bottom: 20px
+@media screen and (max-width: 480px)
+  .stl_header
+    &__info
+      flex-direction: column
+    &__phones
+      margin-right: 0
