@@ -1,0 +1,70 @@
+@import variable
+@import mixins
+
+.stl_header
+  &__content
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+  &__logo
+    font-size: 0
+    line-height: 0
+    text-decoration: none
+    display: block
+  &__info
+    display: flex
+    justify-content: flex-start
+    flex-direction: row
+    align-items: center
+  &__phones
+    margin-right: 20px
+    &-line
+      margin-bottom: 5px
+      text-transform: uppercase
+      font-size: 12px
+      line-height: 12px
+    &-state
+      width: 120px
+      text-align: right
+      margin-right: 15px
+      display: inline-block
+      vertical-align: middle
+    &-number
+      width: 110px
+      display: inline-block
+      vertical-align: middle
+      text-decoration: none
+      color: $color_black
+      transition: color .3s
+      &:hover
+        color: $color_light_blue
+  &__controls
+    &-trash
+      display: block
+      margin-bottom: 10px
+      color: $color_light_blue
+      text-decoration: none
+      transition: color .3s
+      font-size: 12px
+      line-height: 30px
+      text-transform: uppercase
+      background: transparent url($path_image + 'shopping.svg') no-repeat left center
+      height: 30px
+      padding-left: 30px
+      &:hover
+        color: darken($color_light_blue, 15%)
+    &-callme
+      display: block
+      font-size: 12px
+      height: 30px
+      line-height: 30px
+      text-transform: uppercase
+      text-align: center
+      color: $color_white
+      background: $color_light_blue url($path_image + 'call.svg') no-repeat 10px 50%
+      text-decoration: none
+      transition: background-color .3s
+      padding: 0 15px 0 40px
+      &:hover
+        background-color: darken($color_light_blue, 10%)

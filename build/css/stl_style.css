@@ -416,3 +416,101 @@ html, body {
   height: 100%;
   font-weight: 400;
   font-size: 87.5%; }
+
+.stl_responsive-img {
+  max-width: 100%;
+  height: auto; }
+
+.stl_wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif; }
+
+.stl_header {
+  padding: 20px 0;
+  background-color: #ffffff; }
+
+.stl_main {
+  flex: 1 0 auto; }
+
+.stl_footer {
+  padding: 50px 0;
+  background-color: #1c98b6; }
+
+.stl_inner {
+  min-width: 940px;
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.stl_header__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.stl_header__logo {
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+  display: block; }
+
+.stl_header__info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center; }
+
+.stl_header__phones {
+  margin-right: 20px; }
+  .stl_header__phones-line {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 12px; }
+  .stl_header__phones-state {
+    width: 120px;
+    text-align: right;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: middle; }
+  .stl_header__phones-number {
+    width: 110px;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #000000;
+    transition: color .3s; }
+    .stl_header__phones-number:hover {
+      color: #1c98b6; }
+
+.stl_header__controls-trash {
+  display: block;
+  margin-bottom: 10px;
+  color: #1c98b6;
+  text-decoration: none;
+  transition: color .3s;
+  font-size: 12px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background: transparent url("/image/shopping.svg") no-repeat left center;
+  height: 30px;
+  padding-left: 30px; }
+  .stl_header__controls-trash:hover {
+    color: #126174; }
+
+.stl_header__controls-callme {
+  display: block;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background: #1c98b6 url("/image/call.svg") no-repeat 10px 50%;
+  text-decoration: none;
+  transition: background-color .3s;
+  padding: 0 15px 0 40px; }
+  .stl_header__controls-callme:hover {
+    background-color: #15738a; }
