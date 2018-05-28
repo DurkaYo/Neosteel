@@ -1,17 +1,17 @@
 doctype html
 html(lang="en")
-    block vars
-        - var pageTitle = '';
-    head
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic', rel='stylesheet')
-        link(rel='stylesheet', type='text/css', href='css/stl_style.css')
-        title #{pageTitle}
-    body
-        .stl_wrapper
-            include header
-            include navigation
-            main.stl_main
-                block main
-            include footer
+  block vars
+    - var pageTitle = '';
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='css/stl_style.css')
+    title #{pageTitle}
+  body
+    .stl_wrapper
+      include header
+      include navigation
+      main.stl_main
+        block main
+      include footer
