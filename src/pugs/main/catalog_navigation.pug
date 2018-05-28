@@ -1,37 +1,174 @@
 -
-    var nav_catalog = [
-    {
-    id: 'truba_anticor',
-    link: '/truba_anticor/',
-    title: 'Нержавеющие трубы'
-    },
-    {
-    id: 'sort_pokat',
-    link: '/sort_pokat/',
-    title: 'Сортовой прокат'
-    },
-    {
-    id: 'list_nerj',
-    link: '/list_nerj/',
-    title: 'Листовой прокат'
-    },
-    {
-    id: 'pich_arma',
-    link: '/pich_arma/',
-    title: 'Пищевая арматура'
-    },
-    {
-    id: 'lestnica',
-    link: '/lestnica/',
-    title: 'Комплектующие для ограждений и расходные материалы'
-    },
-    {
-    id: 'svarochnye_materialy',
-    link: '/svarochnye_materialy/',
-    title: 'Сварочные материалы'
-    }
-    ]
+	var nav_catalog = [
+	{
+	id: 'truba_anticor',
+	link: '/truba_anticor/',
+	title: 'Нержавеющие трубы',
+	sub_menu: [
+	{
+	id: 'item_01',
+	link: '#',
+	title: 'Круглые нержавеющие трубы'
+	},
+	{
+	id: 'item_02',
+	link: '#',
+	title: 'Труба профильная'
+	},
+	{
+	id: 'item_03',
+	link: '#',
+	title: 'Трубы из нержавеющей стали для пищевой промышленности'
+	}
+	]
+	},
+	{
+	id: 'sort_pokat',
+	link: '/sort_pokat/',
+	title: 'Сортовой прокат',
+	sub_menu: [
+	{
+	id: 'item_01',
+	link: '#',
+	title: 'Нержавеющая полоса'
+	},
+	{
+	id: 'item_02',
+	link: '#',
+	title: 'Проволока'
+	},
+	{
+	id: 'item_03',
+	link: '#',
+	title: 'Уголок нержавеющий'
+	},
+	{
+	id: 'item_04',
+	link: '#',
+	title: 'Шестигранник нержавеющий'
+	},
+	{
+	id: 'item_05',
+	link: '#',
+	title: 'Нержавеющий круг'
+	},
+	{
+	id: 'item_06',
+	link: '#',
+	title: 'Уголок нержавеющий AISI 201 горячекатаный'
+	}
+	]
+	},
+	{
+	id: 'list_nerj',
+	link: '/list_nerj/',
+	title: 'Листовой прокат',
+	sub_menu: [
+	{
+	id: 'item_01',
+	link: '#',
+	title: 'Лист нержавеющий AISI 304 (08Х18Н10)'
+	},
+	{
+	id: 'item_02',
+	link: '#',
+	title: 'Лист нержавеющий AISI 430 (12Х17)'
+	},
+	{
+	id: 'item_03',
+	link: '#',
+	title: 'Лист нержавеющий AISI 304 шлифованный (4N)'
+	},
+	{
+	id: 'item_04',
+	link: '#',
+	title: 'Лист нержавеющий AISI 304 зеркальный (BA)'
+	},
+	{
+	id: 'item_05',
+	link: '#',
+	title: 'Лист нержавеющий AISI 430 шлифованный (4N)'
+	}
+	]
+	},
+	{
+	id: 'pich_arma',
+	link: '/pich_arma/',
+	title: 'Пищевая арматура',
+	sub_menu: [
+	{
+	id: 'item_01',
+	link: '#',
+	title: 'Муфтовое соединение'
+	},
+	{
+	id: 'item_02',
+	link: '#',
+	title: 'Быстросъемное соединение типа CLAMP'
+	},
+	{
+	id: 'item_03',
+	link: '#',
+	title: 'Элементы трубопровода'
+	},
+	{
+	id: 'item_04',
+	link: '#',
+	title: 'Затворы дисковые'
+	}
+	]
+	},
+	{
+	id: 'lestnica',
+	link: '/lestnica/',
+	title: 'Комплектующие для ограждений и расходные материалы',
+	sub_menu: [
+	{
+	id: 'item_01',
+	link: '#',
+	title: 'Расходные материалы'
+	},
+	{
+	id: 'item_02',
+	link: '#',
+	title: 'Декоративный низ стойки'
+	},
+	{
+	id: 'item_03',
+	link: '#',
+	title: 'Отводы нержавеющие AISI 304 (08Х18Н10)'
+	}
+	]
+	},
+	{
+	id: 'svarochnye_materialy',
+	link: '/svarochnye_materialy/',
+	title: 'Сварочные материалы',
+	sub_menu: [
+	{
+	id: 'item_01',
+	link: '#',
+	title: 'Проволока для сварки нержавеющих сталей'
+	},
+	{
+	id: 'item_02',
+	link: '#',
+	title: 'Электроды углеродистые сварочные производства "Спецэлектрод"'
+	},
+	{
+	id: 'item_03',
+	link: '#',
+	title: 'Электрода для сварки и наплавки цветных металлов '
+	}
+	]
+	}
+	]
 
 .stl_product-nav
-    each item in nav_catalog
-        a(href=item.link, class='stl_product-nav--'+item.id).stl_product-nav__link=item.title
+	each item in nav_catalog
+		.stl_product-nav__element
+			a(href=item.link, class='stl_product-nav--' + item.id).stl_product-nav__link #{item.title}
+			ul.stl_product-nav__submenu
+				each item_submenu in item.sub_menu
+					li.stl_product-nav__submenu-element
+						a(href=item_submenu.link).stl_product-nav__submenu-link=item_submenu.title

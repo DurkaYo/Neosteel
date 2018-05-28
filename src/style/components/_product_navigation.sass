@@ -12,23 +12,25 @@
   line-height: 160%
   flex-wrap: wrap
   font-weight: 600
+  &__element
+    width: 16.6666%
+    position: relative
   &__link
     position: relative
     display: block
-    padding: 115px 20px 30px
+    padding: 130px 20px 30px
     color: $color_black
     text-decoration: none
-    width: 16.6666%
     transition: color .3s
     &:before, &:after
       content: ''
       position: absolute
       width: 96px
       height: 95px
-      background: transparent no-repeat top center
+      background: transparent no-repeat center top
       left: 50%
       transform: translateX(-50%)
-      top: 0
+      top: 15px
       transition: opacity .3s linear
     &:before
       z-index: 2
@@ -75,11 +77,53 @@
     &:after
       background-image: url($path_image + 'nav6_.png')
 
+.stl_product-nav
+  &__submenu
+    background-color: $color_white
+    box-shadow: 0 5px 5px 0 rgba($color_input_border, .5)
+    position: absolute
+    left: 0
+    right: 0
+    top: calc(100% - 15px)
+    margin: 0
+    padding: 0
+    display: none
+    &-element
+      list-style: none
+      border-bottom: 1px solid rgba($color_input_border, .3)
+      &:last-child
+        border-bottom: none
+    &-link
+      color: $color_black
+      text-decoration: none
+      transition: background-color .3s ease-out, color .3s ease-in
+      padding: 10px 20px
+      display: block
+      font-weight: 400
+      text-transform: none
+      text-align: left
+      &:hover
+        background-color: rgba($color_input_border, .1)
+
+.stl_product-nav
+  &__element
+    &:hover
+      z-index: 10
+      box-shadow: 0 -1px 5px 0 rgba($color_input_border, .5)
+      .stl_product-nav__submenu
+        display: block
+
+
 @media screen and (max-width: 860px)
   .stl_product-nav
-    &__link
+    &__element
       width: 33.3333%
+      &:hover
+        z-index: 1
+        box-shadow: 0 -1px 5px 0 rgba($color_input_border, 0)
+        .stl_product-nav__submenu
+          display: none
 @media screen and (max-width: 480px)
   .stl_product-nav
-    &__link
+    &__element
       width: 50%
