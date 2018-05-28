@@ -1,0 +1,86 @@
+@import variable
+@import mixins
+
+.stl_product-nav
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  text-align: center
+  text-transform: uppercase
+  color: $color_black
+  font-size: 12px
+  line-height: 160%
+  flex-wrap: wrap
+  font-weight: 600
+  &__link
+    position: relative
+    display: block
+    padding: 115px 20px 0
+    margin-bottom: 30px
+    color: $color_black
+    text-decoration: none
+    width: 16.6666%
+    transition: color .3s
+    &:before, &:after
+      content: ''
+      position: absolute
+      width: 96px
+      height: 95px
+      background: transparent no-repeat top center
+      left: 50%
+      transform: translateX(-50%)
+      top: 0
+      transition: opacity .3s linear
+    &:before
+      z-index: 2
+      opacity: 0
+    &:after
+      z-index: 3
+      opacity: 1
+    &:hover
+      color: $color_light_blue
+      &:before
+        z-index: 2
+        opacity: 1
+      &:after
+        z-index: 3
+        opacity: 0
+  &--truba_anticor
+    &:before
+      background-image: url($path_image + 'nav1-hover.png')
+    &:after
+      background-image: url($path_image + 'nav1.png')
+  &--sort_pokat
+    &:before
+      background-image: url($path_image + 'nav2-hover.png')
+    &:after
+      background-image: url($path_image + 'nav2.png')
+  &--list_nerj
+    &:before
+      background-image: url($path_image + 'nav3-hover.png')
+    &:after
+      background-image: url($path_image + 'nav3.png')
+  &--pich_arma
+    &:before
+      background-image: url($path_image + 'nav4-hover.png')
+    &:after
+      background-image: url($path_image + 'nav4.png')
+  &--lestnica
+    &:before
+      background-image: url($path_image + 'nav5-hover.png')
+    &:after
+      background-image: url($path_image + 'nav5.png')
+  &--svarochnye_materialy
+    &:before
+      background-image: url($path_image + 'nav6-hover_.png')
+    &:after
+      background-image: url($path_image + 'nav6_.png')
+
+@media screen and (max-width: 860px)
+  .stl_product-nav
+    &__link
+      width: 33.3333%
+@media screen and (max-width: 480px)
+  .stl_product-nav
+    &__link
+      width: 50%

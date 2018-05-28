@@ -1,0 +1,12 @@
+@import variable
+@import mixins
+
+.stl_top-banner
+  overflow: hidden
+  height: 500px
+  background: transparent url($path_image + 'slider_element_bg_01.jpg') no-repeat center fixed
+  background-size: cover
+
+@media screen and (max-width: 939px)
+  .stl_top-banner
+    display: none

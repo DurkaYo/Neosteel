@@ -2,4 +2,9 @@ extends pugs/base
 block vars
     - var pageTitle = 'Главная страница';
 block main
-    | it is content
+    .stl_top-banner
+    .stl_inner
+        section.stl_section
+            h2.stl_title Каталог
+            include pugs/main/catalog_navigation
+            include pugs/main/catalog

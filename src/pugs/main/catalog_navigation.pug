@@ -1,0 +1,37 @@
+-
+    var nav_catalog = [
+    {
+    id: 'truba_anticor',
+    link: '/truba_anticor/',
+    title: 'Нержавеющие трубы'
+    },
+    {
+    id: 'sort_pokat',
+    link: '/sort_pokat/',
+    title: 'Сортовой прокат'
+    },
+    {
+    id: 'list_nerj',
+    link: '/list_nerj/',
+    title: 'Листовой прокат'
+    },
+    {
+    id: 'pich_arma',
+    link: '/pich_arma/',
+    title: 'Пищевая арматура'
+    },
+    {
+    id: 'lestnica',
+    link: '/lestnica/',
+    title: 'Комплектующие для ограждений и расходные материалы'
+    },
+    {
+    id: 'svarochnye_materialy',
+    link: '/svarochnye_materialy/',
+    title: 'Сварочные материалы'
+    }
+    ]
+
+.stl_product-nav
+    each item in nav_catalog
+        a(href=item.link, class='stl_product-nav--'+item.id).stl_product-nav__link=item.title
