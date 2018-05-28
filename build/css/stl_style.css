@@ -664,7 +664,8 @@ html, body {
       margin-bottom: 10px;
       text-transform: uppercase; }
     .stl_catalog__link-description {
-      font-size: 10px;
+      font-size: 11px;
+      line-height: 130%;
       color: #888c9e;
       display: block; }
     .stl_catalog__link:hover {
@@ -677,7 +678,9 @@ html, body {
     .stl_catalog__warning-star {
       font-size: 14px;
       font-weight: 600;
-      color: #1c98b6; }
+      color: #1c98b6;
+      display: inline-block;
+      margin-right: 5px; }
 
 @media screen and (max-width: 860px) {
   .stl_catalog__element {
