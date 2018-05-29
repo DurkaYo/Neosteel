@@ -39,14 +39,25 @@
   &__warning
     margin-top: 20px
     color: $color_input_border
-    font-size: 12px
+    font-size: 14px
+    line-height: 150%
     width: 70%
-    &-star
-      font-size: 14px
+    position: relative
+    padding-left: 20px
+    &-tel
+      color: $color_light_blue
+      text-decoration: none
+      transition: color .3s
+      &:hover
+        color: darken($color_light_blue, 10%)
+    &:before
+      content: '*'
+      font-size: 20px
       font-weight: 600
       color: $color_light_blue
-      display: inline-block
-      margin-right: 5px
+      position: absolute
+      top: 4px
+      left: 0
 
 @media screen and (max-width: 860px)
   .stl_catalog

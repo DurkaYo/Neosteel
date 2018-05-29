@@ -745,14 +745,25 @@ html, body {
   .stl_catalog__warning {
     margin-top: 20px;
     color: #888c9e;
-    font-size: 12px;
-    width: 70%; }
-    .stl_catalog__warning-star {
-      font-size: 14px;
+    font-size: 14px;
+    line-height: 150%;
+    width: 70%;
+    position: relative;
+    padding-left: 20px; }
+    .stl_catalog__warning-tel {
+      color: #1c98b6;
+      text-decoration: none;
+      transition: color .3s; }
+      .stl_catalog__warning-tel:hover {
+        color: #15738a; }
+    .stl_catalog__warning:before {
+      content: '*';
+      font-size: 20px;
       font-weight: 600;
       color: #1c98b6;
-      display: inline-block;
-      margin-right: 5px; }
+      position: absolute;
+      top: 4px;
+      left: 0; }
 
 @media screen and (max-width: 860px) {
   .stl_catalog__element {
