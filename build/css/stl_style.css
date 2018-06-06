@@ -892,6 +892,91 @@ html, body {
   .stl_product-nav__element {
     width: 50%; } }
 
+.stl_contacts {
+  max-width: 940px;
+  margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    .stl_contacts {
+      max-width: none; } }
+  .stl_contacts__form {
+    margin: 0;
+    padding: 0;
+    border: none; }
+  .stl_contacts__sendler {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .stl_contacts__input {
+    width: 49%;
+    border: 2px solid rgba(136, 140, 158, 0.3);
+    transition: border .3s;
+    background: #ffffff;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 15px; }
+    .stl_contacts__input.stl--error {
+      border-color: #c92c39;
+      color: #c92c39; }
+    @media screen and (max-width: 480px) {
+      .stl_contacts__input {
+        width: 100%;
+        margin-bottom: 20px; } }
+    .stl_contacts__input:hover {
+      border-color: rgba(136, 140, 158, 0.8); }
+    .stl_contacts__input:focus {
+      border-color: #1c98b6;
+      color: #000000; }
+  .stl_contacts__textarea {
+    width: 100%;
+    margin-top: 20px;
+    border: 2px solid rgba(136, 140, 158, 0.3);
+    transition: border .3s;
+    background: #ffffff;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 15px; }
+    @media screen and (max-width: 480px) {
+      .stl_contacts__textarea {
+        margin-top: 0; } }
+    .stl_contacts__textarea:hover {
+      border-color: rgba(136, 140, 158, 0.8); }
+    .stl_contacts__textarea:focus {
+      border-color: #1c98b6; }
+  .stl_contacts__button {
+    text-align: right;
+    margin-top: 20px;
+    width: 100%; }
+    @media screen and (max-width: 480px) {
+      .stl_contacts__button {
+        text-align: center; } }
+  .stl_contacts__btn {
+    text-decoration: none;
+    border: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .3s;
+    background-color: #1c98b6;
+    border-radius: 10px; }
+    .stl_contacts__btn:hover {
+      background-color: #15738a; }
+    @media screen and (max-width: 480px) {
+      .stl_contacts__btn {
+        width: 100%; } }
+  .stl_contacts__done {
+    font-size: 16px;
+    color: #1c98b6;
+    text-align: center; }
+    .stl_contacts__done-first {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px; }
+
 @media screen and (max-width: 939px) {
   .stl_hidden-on-devices {
     display: none; } }

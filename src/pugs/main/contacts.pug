@@ -1,0 +1,11 @@
+.stl_contacts
+	form.stl_contacts__form
+		.stl_contacts__sendler
+			input(type='text', placeholder='Ваше имя').stl_contacts__input
+			input(type='phone', placeholder='+7 (999) 999-99-99', value='+7 909 ').stl_contacts__input.stl--error
+			textarea(rows=6).stl_contacts__textarea
+			.stl_contacts__button
+				button.stl_contacts__btn Отправить
+		.stl_contacts__done(style="display: none")
+			.stl_contacts__done-first Ваша заявка отправлена.
+			.stl_contacts__done-last Менеджер свяжется с Вами в ближайшее время.
